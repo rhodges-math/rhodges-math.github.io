@@ -1,0 +1,52 @@
+html {
+	height:100%;
+}
+
+
+body {
+	height:100%; background-color:#FFFFFF; FONT: 76% Verdana,Tahoma,Arial,sans-serif; COLOR: #505050;
+}
+
+#main {
+	height:100%;max-width: 1400px;
+}
+
+#header {
+	CLEAR: both; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 10px 0px 0px; PADDING-TOP: 0px; min-height:55px; float: left;
+}
+
+#headertext {
+	padding: 10px 0px 10px 0px;color:#1A2930; font-size: 16pt;
+}
+
+#leftcol {
+	CLEAR: both; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 5px; WIDTH: 150px; PADDING-TOP: 0px;height:100%;
+}
+
+#rightcol {
+	margin-left:100px;
+}
+
+A {
+	font-weight: bold; color: #1A2930; text-decoration: none;
+}
+A:hover {
+	color: #1A2930; text-decoration: underline;
+}
+UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 18px; WIDTH: 140px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none; height:100%;
+}
+
+UL LI {
+	PADDING-RIGHT: 0px; DISPLAY: inline; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; WIDTH: 140px; LINE-HEIGHT: 1.4em; PADDING-TOP: 0px
+}
+
+UL LI A {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 4px; FLOAT: left; MARGIN-BOTTOM: 2px; PADDING-BOTTOM: 4px; WIDTH: 130px; PADDING-TOP: 4px; TEXT-DECORATION: none; background-color: #D2D0D0;color:#1A2930; font-weight: bold;border-left: solid 3px #1A2930;
+}
+UL LI A:hover {
+	background-color: #C5C1C0;color:#1A2930; font-weight: bold;border-left: solid 3px #f2c407;TEXT-DECORATION: none;
+}
+UL LI A.current {
+	background-color: #C5C1C0;color:#1A2930; font-weight: bold;border-left: solid 3px #f2c407;TEXT-DECORATION: none;
+}
