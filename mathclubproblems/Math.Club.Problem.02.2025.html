@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math Club Problem: The Focus Challenge</title>
+    <style>
+        .problem-container {
+            max-width: 1024px;
+            margin: 20px auto;
+            padding: 25px;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .distraction-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .distraction-list li {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-left: 4px solid #ddd;
+        }
+        .coordinate {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .problem-part {
+            margin-top: 25px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+        }
+        .bonus-part {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            border-radius: 4px;
+        }
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .image-container div {
+            flex: 1; /* Each image container takes up equal space */
+            text-align: center;
+        }
+        .image-container img {
+            width: 90%; /* Use most of the available space */
+            height: auto; /* Maintain aspect ratio */
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+        }
+        .caption {
+            font-size: 18px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="problem-container">
+        <h2>📚 The Focus Challenge</h2>
+        
+        <p>Alexia (a student at KU) wants to travel from their dorm at grid position (0,0) to the coffee cart at (6,6). She can move <strong>only east or north</strong>. Three distractions block her path:</p>
+
+        <ul class="distraction-list">
+            <li>
+                <span class="coordinate">📍(2,2)</span> Mandatory rock-paper-scissors arena 🖐️<br>
+                <em>"Best 3 out of 5 wins required to pass!"</em>
+            </li>
+            <li>
+                <span class="coordinate">📍(3,3)</span> Philosophy TA offering "existential direction counseling" 🤯<br>
+                <em>"Is NORTH merely a social construct? Discuss."</em>
+            </li>
+            <li>
+                <span class="coordinate">📍(4,4)</span> Mandatory gummy roulette booth 🎰<br>
+                <em>Spin the wheel to receive a gummy bear - 90% tropical fruit, 10% toothpaste-flavor.</em>
+            </li>
+        </ul>
+
+        <div class="problem-part">
+            <strong>Calculate the number of viable paths where Alexia:</strong>
+            <ol>
+                <li>a) Avoids <strong>all distractions</strong></li>
+                <li>b) Avoids <strong>at least two distractions</strong></li>
+            </ol>
+        </div>
+
+        <!-- Bonus Section -->
+        <div class="bonus-part">
+            <strong>Bonus Challenge:</strong><br>
+            c) The distractions have relocated! <em>Every coordinate below the diagonal</em> connecting (0,0) to (6,6) now contains a distraction:<br>
+            <span class="coordinate">📍(x,y)</span> where x > y<br>
+            How many paths avoid <strong>all</strong> these new distractions while moving only east/north?
+        </div>
+
+        <!-- Images for Part a/b and Part c -->
+        <div class="image-container">
+            <!-- Image for Part a and b -->
+            <div>
+                <img src="Math.Club.Problem.02.2025.1.png" alt="Grid with Distractions (Part a and b)">
+                <p class="caption">Figure 1: Grid with distractions at (2,2), (3,3), and (4,4).</p>
+            </div>
+
+            <!-- Image for Part c -->
+            <div>
+                <img src="Math.Club.Problem.02.2025.2.png" alt="Grid with Distractions Below Diagonal (Part c)">
+                <p class="caption">Figure 2: Grid with distractions below the diagonal (x > y).</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
