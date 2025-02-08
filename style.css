@@ -1,52 +1,113 @@
 html {
-	height:100%;
+    height:100%;
 }
 
-
 body {
-	height:100%; background-color:#FFFFFF; FONT: 76% Verdana,Tahoma,Arial,sans-serif; COLOR: #505050;
+    height:100%; background-color:#FFFFFF; FONT: 76% Verdana,Tahoma,Arial,sans-serif; COLOR: #505050;
 }
 
 #main {
-	height:100%;max-width: 1400px;
+    height:100%;max-width: 1400px;
 }
 
 #header {
-	CLEAR: both; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 10px 0px 0px; PADDING-TOP: 0px; min-height:55px; float: left;
+    CLEAR: both; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 10px 0px 0px; PADDING-TOP: 0px; min-height:55px; float: left;
 }
 
 #headertext {
-	padding: 10px 0px 10px 0px;color:#1A2930; font-size: 16pt;
+    padding: 10px 0px 10px 0px;color:#1A2930; font-size: 16pt;
 }
 
 #leftcol {
-	CLEAR: both; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 5px; WIDTH: 150px; PADDING-TOP: 0px;height:100%;
+    CLEAR: both; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 5px; WIDTH: 150px; PADDING-TOP: 0px;height:100%;
 }
 
 #rightcol {
-	margin-left:100px;
+    margin-left: 160px; /* Increased from 100px for better spacing */
+    padding-right: 20px;
 }
 
+/* Add styles for details/summary */
+details {
+    margin: 2em 0;
+    border: 1px solid #C5C1C0;
+    border-radius: 4px;
+    background: #f8f8f8;
+}
+
+summary {
+    font-weight: bold;
+    padding: 12px;
+    background: #D2D0D0;
+    color: #1A2930;
+    cursor: pointer;
+    border-left: 3px solid #1A2930;
+}
+
+/* Add this to your existing CSS */
+details {
+    padding: 15px; /* Added internal padding */
+}
+
+details a {
+    /* Reset button styles for links inside details */
+    background-color: transparent !important;
+    border-left: none !important;
+    padding: 0 !important;
+    width: auto !important;
+    float: none !important;
+    margin-bottom: 0 !important;
+    color: #1A2930 !important;
+    text-decoration: underline;
+}
+
+details a:hover {
+    color: #1A2930 !important;
+    text-decoration: none;
+}
+
+details h3 {
+    margin: 1em 0 0.5em 0;
+    color: #1A2930;
+    font-size: 1.1em;
+}
+
+details ol, details ul {
+    margin: 0.5em 0;
+    padding-left: 2em;
+    width: auto; /* Override UL width */
+}
+
+details li {
+    display: list-item; /* Fix list display */
+    margin-bottom: 0.5em;
+    line-height: 1.4;
+    width: auto; /* Remove fixed width */
+}
+
+/* Keep existing link styles */
 A {
-	font-weight: bold; color: #1A2930; text-decoration: none;
+    font-weight: bold; color: #1A2930; text-decoration: none;
 }
 A:hover {
-	color: #1A2930; text-decoration: underline;
+    color: #1A2930; text-decoration: underline;
 }
+
+/* Existing menu styles remain unchanged */
 UL {
-	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 18px; WIDTH: 140px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none; height:100%;
+    PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 18px; WIDTH: 140px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none; height:100%;
 }
 
 UL LI {
-	PADDING-RIGHT: 0px; DISPLAY: inline; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; WIDTH: 140px; LINE-HEIGHT: 1.4em; PADDING-TOP: 0px
+    PADDING-RIGHT: 0px; DISPLAY: inline; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; WIDTH: 140px; LINE-HEIGHT: 1.4em; PADDING-TOP: 0px
 }
 
 UL LI A {
-	PADDING-RIGHT: 1px; PADDING-LEFT: 4px; FLOAT: left; MARGIN-BOTTOM: 2px; PADDING-BOTTOM: 4px; WIDTH: 130px; PADDING-TOP: 4px; TEXT-DECORATION: none; background-color: #D2D0D0;color:#1A2930; font-weight: bold;border-left: solid 3px #1A2930;
+    PADDING-RIGHT: 1px; PADDING-LEFT: 4px; FLOAT: left; MARGIN-BOTTOM: 2px; PADDING-BOTTOM: 4px; WIDTH: 130px; PADDING-TOP: 4px; TEXT-DECORATION: none; background-color: #D2D0D0;color:#1A2930; font-weight: bold;border-left: solid 3px #1A2930;
 }
 UL LI A:hover {
-	background-color: #C5C1C0;color:#1A2930; font-weight: bold;border-left: solid 3px #f2c407;TEXT-DECORATION: none;
+    background-color: #C5C1C0;color:#1A2930; font-weight: bold;border-left: solid 3px #f2c407;TEXT-DECORATION: none;
 }
 UL LI A.current {
-	background-color: #C5C1C0;color:#1A2930; font-weight: bold;border-left: solid 3px #f2c407;TEXT-DECORATION: none;
+    background-color: #C5C1C0;color:#1A2930; font-weight: bold;border-left: solid 3px #f2c407;TEXT-DECORATION: none;
 }
