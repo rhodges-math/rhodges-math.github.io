@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math Club Problem: Midnight Transfer Protocol</title>
+    <style>
+        .problem-container {
+            max-width: 1024px;
+            margin: 20px auto;
+            padding: 24px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.5;
+            color: #333;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 6px;
+            margin: 18px 0 14px;
+            font-size: 1.4em;
+        }
+        .inline-label {
+            font-variant-caps: small-caps;
+            font-weight: 600;
+        }
+        .problem-part {
+            margin-top: 18px;
+            padding: 14px;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+        }
+        .requirements {
+            background-color: #e9f5f9;
+            border: 1px solid #bce8f1;
+            border-left: 3px solid #31708f;
+            padding: 12px;
+            margin: 16px 0;
+            border-radius: 4px;
+        }
+        .requirements h3,
+        .problem-part h3,
+        .bonus h3 {
+            margin-top: 0;
+        }
+        .governance {
+            background-color: #fff3cd;
+            border: 1px solid #fae5a6;
+            border-left: 4px solid #f39c12;
+            padding: 12px 14px;
+            margin: 16px 0;
+            border-radius: 4px;
+        }
+        .governance .title {
+            font-weight: 700;
+            margin-right: 6px;
+        }
+        .bonus {
+            background-color: #fcf8e3;
+            border: 1px solid #faebcc;
+            border-left: 3px solid #8a6d3b;
+            padding: 12px;
+            margin: 16px 0;
+            border-radius: 4px;
+        }
+        .emoji {
+            font-size: 1.05em;
+            vertical-align: baseline;
+            margin-right: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="problem-container">
+        <h2>🤖 Midnight Transfer Protocol</h2>
+
+        <p>
+            Inside a sealed robotics facility, each unit carries a status LED that is either teal (non-sentient) or magenta (sentient-certified). Every robot can visually observe all other LEDs during daily operations, but each unit lacks any self-sensor that can read its own LED. Communication about LED status is cryptographically blocked at the protocol layer; no direct or indirect messaging about LEDs is possible. No unit can ever obtain its own LED color via any means-there are no reflective surfaces, no cameras or self-diagnostics, and no permissible workarounds that would reveal self-status. Facility days are globally synchronized so that the midnight “tick” is simultaneous and observable across the floor.
+        </p>
+
+        <p>
+            Above the central charging dais hangs a longstanding placard, installed at commissioning and visible to all: “This facility always operates with both LED states active”. The placard remains posted in the atrium and is known to all units during normal operations. Transfers to bays and the absence of transfers are observable outcomes on the next day’s operations log.
+        </p>
+
+        <div class="governance">
+            <span class="title">⚖️ Governance rule.</span>
+            Any robot that can logically certify that its own LED is magenta must transfer to the Rights-Compliant Bay exactly at the midnight tick; no other transfers are permitted under this rule. There are no other information channels: no sideband telemetry about LED status, no mirrors or self-diagnostics, and no exception to the communications block regarding LEDs.
+        </div>
+
+        <p>
+            <span class="inline-label">Inspector’s closing remark.</span> On Day 0 at 12:00, a Government Sentience Inspector completes an audit and, bound by regulations forbidding mention of any specific unit’s status, makes a single, facility-wide closing statement in the atrium: “It is confirmed that more than one LED state is currently active”. The statement is audibly broadcast and posted to the public operations log with a cryptographic signature; all robots verify receipt and know that the statement is posted in the public log. From that point, normal operations proceed with the usual synchronized midnights and visible outcomes (who transfers, who does not).
+        </p>
+
+        <div class="problem-part">
+            <h3>🧠 Puzzle</h3>
+            <p>
+                Suppose there are N magenta robots in the facility (with N a positive integer). Under the conditions above, on which numbered midnight, counted from Day 0 to Day 1 as the first midnight after the inspector’s closing statement, do magenta robots transfer to the Rights-Compliant Bay, and how many transfer on that midnight? Provide a justification that is valid for all integers N ≥ 1, using only the information structure, timing assumptions, and governance rule specified above.
+            </p>
+        </div>
+
+        <div class="bonus">
+            <h3>✨ Bonus: Why does the announcement matter?</h3>
+            <p>
+                The permanent placard already states that both LED states are active, and it is publicly visible. The inspector’s closing statement appears to add nothing “new” about LEDs. Explain what, if anything, the inspector’s public statement contributes beyond the longstanding placard.
+            </p>
+        </div>
+
+        <div class="requirements">
+            <h3>📝 Solution Requirements</h3>
+            <ul>
+                <li>The answer for general N must be rigorously justified for all integers N ≥ 1.</li>
+            </ul>
+        </div>
+
+        <div class="requirements">
+            <h3>⚙️ Ideal Conditions</h3>
+            <ul>
+                <li>Perfect rationality: Every robot is a perfect logical reasoner and follows the governance rule without fail.</li>
+                <li>Flawless observation: Each robot instantly and accurately observes all other LEDs; there are no perception or logging errors.</li>
+                <li>Synchronized knowledge: All rules, the Inspector’s statement, and each midnight tick are received and processed simultaneously by all robots; outcomes (transfers or their absence) are publicly observable.</li>
+                <li>No side channels: Communication about LED status is cryptographically blocked; no mirrors, self-diagnostics, or indirect signaling are available.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
